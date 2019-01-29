@@ -1,0 +1,68 @@
+const quizData = [
+    {
+        img: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+        answer1: 'Ruby',
+        answer2: 'Python',
+        answer3: 'NodeJS',
+        answer4: 'JS',
+        right: '4',
+    },
+    {
+        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png',
+        answer1: 'CSS',
+        answer2: 'Ruby',
+        answer3: 'HTML',
+        answer4: 'PHP',
+        right: '2',
+    },
+    {
+        img: 'https://cdn.freebiesupply.com/logos/large/2x/java-14-logo-png-transparent.png',
+        answer1: 'JS',
+        answer2: 'LaTeX',
+        answer3: 'TypeScript',
+        answer4: 'Java',
+        right: '4',
+    },
+    {
+        img: 'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png',
+        answer1: 'Perl',
+        answer2: 'Redux',
+        answer3: 'ReactJS',
+        answer4: 'GraphSQL',
+        right: '3',
+    }, 
+    {
+        img: 'https://cdn.freebiesupply.com/logos/large/2x/python-5-logo-png-transparent.png',
+        answer1: 'Swift',
+        answer2: 'Rails',
+        answer3: 'Python',
+        answer4: 'MySQL',
+        right: '3',
+    }, 
+    {
+        img: 'https://cdn.freebiesupply.com/logos/large/2x/angular-icon-1-logo-png-transparent.png',
+        answer1: 'Angular',
+        answer2: 'Xamarin',
+        answer3: 'ASP.net',
+        answer4: 'C#',
+        right: '1',
+    },   
+    {
+        img: 'http://www.binarywebpark.com/wp-content/uploads/2016/04/elixir_github_1481354.png',
+        answer1: 'Scala',
+        answer2: 'Elixir',
+        answer3: 'Objective-C',
+        answer4: 'C++',
+        right: '2',
+    },  
+    {
+        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Vue.js_Logo.svg/2000px-Vue.js_Logo.svg.png',
+        answer1: 'Visual Basic',
+        answer2: 'jQuery',
+        answer3: 'F#',
+        answer4: 'VueJS',
+        right: '4',
+    }, 
+]
+
+export default quizData; 
