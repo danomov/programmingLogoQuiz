@@ -7,6 +7,7 @@ import java from './images/java.png';
 import elixir from './images/elixir.png'; 
 import angular from './images/angular.png'; 
 
+//We use this data array with objects of logo informations
 const quizData = [
     {
         img: `${js}`,

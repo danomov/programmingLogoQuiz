@@ -3,6 +3,7 @@ import quizData from './data';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@material-ui/core/Button';
 
+//Logo and answer buttons component
 const QuizAppComponent = (props) => {
     
     return (
@@ -26,7 +27,7 @@ const QuizAppComponent = (props) => {
     );
 }
 
-
+//HOC component that provides functionality for our 'QuizAppComponent'
 const withFunctionality = (WrappedComponent) => {
     return class extends Component {
         constructor(){
@@ -39,24 +40,25 @@ const withFunctionality = (WrappedComponent) => {
         }
         }    
 
+        //This method is for getting new logo
         handlePass = () => {
             this.handleLoadReset();
             this.setState({quizNumber: this.state.quizNumber + 1});
         }
 
+        //Turn on loading circle
         handleLoadReset = () => {
             this.setState({isLoading: true});
         }
         
+        //After answer this method calculates the answer
         handleNext = (e) => {
             if(e.currentTarget.name === quizData[this.state.quizNumber].right) {
             this.setState({quizNumber: this.state.quizNumber + 1, rightAnswers: this.state.rightAnswers + 1});
             }
-            else {
-            this.setState({quizNumber: this.state.quizNumber + 1});
-            }
         }
 
+        //Reset the progress 
         handleReset = () => {
             this.setState({
                 quizNumber: 0,
@@ -66,11 +68,13 @@ const withFunctionality = (WrappedComponent) => {
             })
         }
 
+        //Turn of loading circle
         handleLoad = () => {
             this.setState({isLoading: false});
         }
 
         render(){
+            //Conditional rendering checks the end of quiz
             if(this.state.quizNumber >= this.state.length) {
             return (
                 <div style={{textAlign: 'center', marginTop: '70px'}}>
