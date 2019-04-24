@@ -7,7 +7,10 @@ const QuizAppComponent = (props) => {
     
     return (
         <div>
-            <img onLoad={() => props.handleLoad()} style={{width: '300px', height: '300px'}} alt='' src={quizData[props.index].img}/><br/>
+            <div className={quizData[props.index].animation}>
+            <img onLoad={() => props.handleLoad()} style={{width: '300px', height: '300px'}} alt='' src={quizData[props.index].img}/>
+            </div>
+            <br/>
             { (!props.isLoading) ?
             <div>
             <Button name='2' onClick={(e) => { props.handleNext(e); props.handlePass()}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer2}</Button>

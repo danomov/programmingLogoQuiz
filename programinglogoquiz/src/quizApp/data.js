@@ -15,6 +15,7 @@ const quizData = [
         answer3: 'NodeJS',
         answer4: 'JS',
         right: '4',
+        animation: 'animated bounceInLeft',
     },
     {
         img: `${ruby}`,
@@ -23,6 +24,7 @@ const quizData = [
         answer3: 'HTML',
         answer4: 'PHP',
         right: '2',
+        animation: 'animated bounceInRight',
     },
     {
         img: `${java}`,
@@ -31,6 +33,7 @@ const quizData = [
         answer3: 'TypeScript',
         answer4: 'Java',
         right: '4',
+        animation: 'animated bounceInUp',
     },
     {
         img: `${react}`,
@@ -39,6 +42,7 @@ const quizData = [
         answer3: 'ReactJS',
         answer4: 'GraphSQL',
         right: '3',
+        animation: 'animated jello',
     }, 
     {
         img: `${python}`,
@@ -47,6 +51,7 @@ const quizData = [
         answer3: 'Python',
         answer4: 'MySQL',
         right: '3',
+        animation: 'animated pulse',
     }, 
     {
         img: `${angular}`,
@@ -55,6 +60,7 @@ const quizData = [
         answer3: 'ASP.net',
         answer4: 'C#',
         right: '1',
+        animation: 'animated flash',
     },   
     {
         img: `${elixir}`,
@@ -63,6 +69,7 @@ const quizData = [
         answer3: 'Objective-C',
         answer4: 'C++',
         right: '2',
+        animation: 'animated tada',
     },  
     {
         img: `${vuejs}`,
@@ -71,6 +78,7 @@ const quizData = [
         answer3: 'F#',
         answer4: 'VueJS',
         right: '4',
+        animation: 'animated fadeIn',
     }, 
 ]
 
