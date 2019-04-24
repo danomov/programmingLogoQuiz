@@ -10,10 +10,10 @@ const QuizAppComponent = (props) => {
             <img onLoad={() => props.handleLoad()} style={{width: '300px', height: '300px'}} alt='' src={quizData[props.index].img}/><br/>
             { (!props.isLoading) ?
             <div>
-            <Button name='1' onClick={(e) => { props.handlePass(); props.handleNext(e)}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer1}</Button>
-            <Button name='2' onClick={(e) => { props.handlePass(); props.handleNext(e)}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer2}</Button>
-            <Button name='3' onClick={(e) => { props.handlePass(); props.handleNext(e)}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer3}</Button>
-            <Button name='4' onClick={(e) => { props.handlePass(); props.handleNext(e)}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer4}</Button>
+            <Button name='2' onClick={(e) => { props.handleNext(e); props.handlePass()}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer2}</Button>
+            <Button name='1' onClick={(e) => { props.handleNext(e); props.handlePass()}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer1}</Button>
+            <Button name='3' onClick={(e) => { props.handleNext(e); props.handlePass()}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer3}</Button>
+            <Button name='4' onClick={(e) => { props.handleNext(e); props.handlePass()}} color='primary' variant='contained' style={{margin: '10px'}}>{quizData[props.index].answer4}</Button>
             <br/>     
             <Button onClick={props.handlePass} color='secondary' variant='contained'>Next</Button>
             </div>
@@ -26,12 +26,15 @@ const QuizAppComponent = (props) => {
 
 const withFunctionality = (WrappedComponent) => {
     return class extends Component {
-        state = {
+        constructor(){
+        super();
+        this.state = {
             quizNumber: 0,
             rightAnswers: 0,
             length: quizData.length,
             isLoading: true,
         }
+        }    
 
         handlePass = () => {
             this.handleLoadReset();
@@ -43,7 +46,7 @@ const withFunctionality = (WrappedComponent) => {
         }
         
         handleNext = (e) => {
-            if(e.target.name === quizData[this.state.quizNumber].right) {
+            if(e.currentTarget.name === quizData[this.state.quizNumber].right) {
             this.setState({quizNumber: this.state.quizNumber + 1, rightAnswers: this.state.rightAnswers + 1});
             }
             else {
@@ -83,11 +86,6 @@ const withFunctionality = (WrappedComponent) => {
         }
     }
 }
-
-
-
-
-
 
 
 export default withFunctionality(QuizAppComponent);

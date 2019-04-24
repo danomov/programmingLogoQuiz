@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import QuizAppComponent from './quizApp/mainENV';
+import QuizAppComponent from './quizApp/quiz';
 
 
 class App extends React.Component {

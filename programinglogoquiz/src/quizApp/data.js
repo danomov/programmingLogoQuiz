@@ -1,6 +1,15 @@
+import vuejs from './images/vuejs.png'; 
+import ruby from './images/ruby.png'; 
+import react from './images/react.png'; 
+import python from './images/python.png'; 
+import js from './images/js.png'; 
+import java from './images/java.png'; 
+import elixir from './images/elixir.png'; 
+import angular from './images/angular.png'; 
+
 const quizData = [
     {
-        img: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+        img: `${js}`,
         answer1: 'Ruby',
         answer2: 'Python',
         answer3: 'NodeJS',
@@ -8,7 +17,7 @@ const quizData = [
         right: '4',
     },
     {
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png',
+        img: `${ruby}`,
         answer1: 'CSS',
         answer2: 'Ruby',
         answer3: 'HTML',
@@ -16,7 +25,7 @@ const quizData = [
         right: '2',
     },
     {
-        img: 'https://cdn.freebiesupply.com/logos/large/2x/java-14-logo-png-transparent.png',
+        img: `${java}`,
         answer1: 'JS',
         answer2: 'LaTeX',
         answer3: 'TypeScript',
@@ -24,7 +33,7 @@ const quizData = [
         right: '4',
     },
     {
-        img: 'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png',
+        img: `${react}`,
         answer1: 'Perl',
         answer2: 'Redux',
         answer3: 'ReactJS',
@@ -32,7 +41,7 @@ const quizData = [
         right: '3',
     }, 
     {
-        img: 'https://cdn.freebiesupply.com/logos/large/2x/python-5-logo-png-transparent.png',
+        img: `${python}`,
         answer1: 'Swift',
         answer2: 'Rails',
         answer3: 'Python',
@@ -40,7 +49,7 @@ const quizData = [
         right: '3',
     }, 
     {
-        img: 'https://cdn.freebiesupply.com/logos/large/2x/angular-icon-1-logo-png-transparent.png',
+        img: `${angular}`,
         answer1: 'Angular',
         answer2: 'Xamarin',
         answer3: 'ASP.net',
@@ -48,7 +57,7 @@ const quizData = [
         right: '1',
     },   
     {
-        img: 'http://www.binarywebpark.com/wp-content/uploads/2016/04/elixir_github_1481354.png',
+        img: `${elixir}`,
         answer1: 'Scala',
         answer2: 'Elixir',
         answer3: 'Objective-C',
@@ -56,7 +65,7 @@ const quizData = [
         right: '2',
     },  
     {
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Vue.js_Logo.svg/2000px-Vue.js_Logo.svg.png',
+        img: `${vuejs}`,
         answer1: 'Visual Basic',
         answer2: 'jQuery',
         answer3: 'F#',
